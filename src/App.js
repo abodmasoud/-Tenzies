@@ -5,7 +5,7 @@ import Score from './components/score/Score';
 
 import Confetti from 'react-confetti';
 import { nanoid } from 'nanoid';
-export default function App() {
+export default function App() { //u
     function generateNewDice() {
         return {
             value: Math.ceil(Math.random() * 6),
