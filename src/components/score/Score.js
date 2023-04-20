@@ -23,7 +23,7 @@ export default function Score(props) {
     }, [props.winState , props.newGameState])
 
     const firstRender = useRef(true);
-    useEffect((props) => {
+    useEffect(() => {
         // to check if this is first render
         if (firstRender.current) {
             firstRender.current = false;
@@ -34,7 +34,7 @@ export default function Score(props) {
             localStorage.setItem("bestTime", `${time} `);
             setBestTime(time);
         }
-    }, [props.winState])
+    }, []);
 
 
     return (
