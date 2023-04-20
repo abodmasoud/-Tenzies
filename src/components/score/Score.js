@@ -6,7 +6,7 @@ export default function Score(props) {
     const [time, setTime] = useState(0);
 
     // for increase timer
-    useEffect(() => {
+    useEffect((props) => {
         const interval = setInterval(() => {
             if(props.newGameState){
                 setTime(0);
@@ -23,7 +23,7 @@ export default function Score(props) {
     }, [props.winState , props.newGameState])
 
     const firstRender = useRef(true);
-    useEffect(() => {
+    useEffect((props) => {
         // to check if this is first render
         if (firstRender.current) {
             firstRender.current = false;
