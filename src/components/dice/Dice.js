@@ -1,6 +1,6 @@
 import './Dice.css';
 import { nanoid } from 'nanoid';
-export default function (props) {
+export default function dice (props) {
     const styles = { backgroundColor: props.isHeld ? "#59E391" : "#FFFFFF" };
     const dotes = [];
     for (let index = 0; index < props.currentNumber; index++) {
